@@ -34,7 +34,7 @@
 
         //public virtual User User { get; set; }
 
-            //for two users(if we don't want a collection of users)
+        //for two users(if we don't want a collection of users)
         public string FirstUserId { get; set; }
 
         public virtual User FirstUser { get; set; }
