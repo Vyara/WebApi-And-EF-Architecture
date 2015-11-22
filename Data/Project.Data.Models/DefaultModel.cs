@@ -9,7 +9,7 @@
     {
         public DefaultModel()
         {
-            this.OtherDefaults = new HashSet<OtherDefaultModel>();
+            this.OtherDefaultModels = new HashSet<OtherDefaultModel>();
         }
 
         [Key]
@@ -43,7 +43,7 @@
 
         public virtual User SecondUser { get; set; }
 
-        public virtual ICollection<OtherDefaultModel> OtherDefaults { get; set; }
+        public virtual ICollection<OtherDefaultModel> OtherDefaultModels { get; set; }
 
     }
 }
