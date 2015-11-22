@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Data", "Data\Projec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Web.Api", "Web\Project.Web.Api\Project.Web.Api.csproj", "{93B2AE5D-83D9-4A1C-BBF9-0E6DB4906CA9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{DC69852F-A604-45DB-822F-E036955DC46E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Common", "Project.Common\Project.Common.csproj", "{3DB71AED-E6FB-4582-B4AE-3537E50DBB0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{93B2AE5D-83D9-4A1C-BBF9-0E6DB4906CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B2AE5D-83D9-4A1C-BBF9-0E6DB4906CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B2AE5D-83D9-4A1C-BBF9-0E6DB4906CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB71AED-E6FB-4582-B4AE-3537E50DBB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB71AED-E6FB-4582-B4AE-3537E50DBB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB71AED-E6FB-4582-B4AE-3537E50DBB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB71AED-E6FB-4582-B4AE-3537E50DBB0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +51,6 @@ Global
 		{224CF3BB-2BA6-4367-97CC-ED4231F267E1} = {B3025F7A-5457-41F1-A4BA-63C71D6C2A08}
 		{DB005941-D4BA-4BB2-8206-957F7AA25861} = {B3025F7A-5457-41F1-A4BA-63C71D6C2A08}
 		{93B2AE5D-83D9-4A1C-BBF9-0E6DB4906CA9} = {3047B826-EAAC-456C-96DB-50F80E97846A}
+		{3DB71AED-E6FB-4582-B4AE-3537E50DBB0E} = {DC69852F-A604-45DB-822F-E036955DC46E}
 	EndGlobalSection
 EndGlobal
