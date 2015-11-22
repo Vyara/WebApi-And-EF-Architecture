@@ -3,9 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Web;
+    using System.Text;
+    using System.Threading.Tasks;
 
-    public class RandomProvider : IRandomProvider
+    public interface IRandomProvider
     {
+        int GetRandomNumber(int min, int max);
     }
 }
