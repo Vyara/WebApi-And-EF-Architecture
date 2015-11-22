@@ -6,7 +6,7 @@
     using Common.Constants;
 
     using Ninject;
-    // using Ninject.Extensions.Conventions;
+    using Ninject.Extensions.Conventions;
     using Ninject.Web.Common;
 
     using Data;
@@ -36,12 +36,12 @@
 
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind(typeof (IRepository<>)).To(typeof (EfGenericRepository<>));
+            kernel.Bind(typeof(IRepository<>)).To(typeof(EfGenericRepository<>));
             kernel.Bind<IProjectDbContext>().To<ProjectDbContext>().InRequestScope();
 
-            //kernel.Bind(b => b.From(Assemblies.DataServices)
-            //.SelectAllClasses()
-            //.BindDefaultInterface());
+            kernel.Bind(b => b.From(Assemblies.DataServices)
+            .SelectAllClasses()
+            .BindDefaultInterface());
         }
     }
 }
