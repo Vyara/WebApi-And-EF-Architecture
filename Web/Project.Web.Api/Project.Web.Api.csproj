@@ -220,8 +220,7 @@
     </Compile>
     <Compile Include="Infrastructure\Mappings\IHaveCustomMappings.cs" />
     <Compile Include="Infrastructure\Mappings\IMapFrom.cs" />
-    <Compile Include="Infrastructure\Providers\IRandomProvider.cs" />
-    <Compile Include="Infrastructure\Providers\RandomProvider.cs" />
+    <Compile Include="Infrastructure\Validation\ValidateModelAttribute.cs" />
     <Compile Include="Models\BindingModels\AddExternalLoginBindingModel.cs" />
     <Compile Include="Models\ViewModels\ExternalLoginViewModel.cs" />
     <Compile Include="Models\BindingModels\ChangePasswordBindingModel.cs" />
