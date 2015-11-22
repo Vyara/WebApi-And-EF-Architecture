@@ -11,6 +11,8 @@
         {
         }
 
+        //TODO add public vitual IDbSet properties
+
         public static ProjectDbContext Create()
         {
             return new ProjectDbContext();

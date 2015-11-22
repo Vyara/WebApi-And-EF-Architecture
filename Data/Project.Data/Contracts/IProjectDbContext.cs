@@ -6,6 +6,8 @@
 
     public interface IProjectDbContext
     {
+        //TODO add properties fot other Db Models
+
         IDbSet<User> Users { get; set; }
 
         DbSet<TEntity> Set<TEntity>() where TEntity : class;
