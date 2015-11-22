@@ -10,6 +10,7 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using Project.Web.Api.Models;
+using Project.Data.Models;
 
 namespace Project.Web.Api.Providers
 {

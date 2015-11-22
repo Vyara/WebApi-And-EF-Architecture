@@ -18,6 +18,7 @@
     using Project.Web.Api.Models;
     using Project.Web.Api.Providers;
     using Project.Web.Api.Results;
+    using Data.Models;
 
     [Authorize]
     [RoutePrefix("api/Account")]

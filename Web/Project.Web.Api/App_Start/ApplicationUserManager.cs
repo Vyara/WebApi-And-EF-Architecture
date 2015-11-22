@@ -3,7 +3,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using Project.Web.Api.Models;
+using Project.Data.Models;
+using Project.Data;
 
 namespace Project.Web.Api
 {

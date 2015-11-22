@@ -180,7 +180,6 @@
     </Compile>
     <Compile Include="Models\BindingModels\AddExternalLoginBindingModel.cs" />
     <Compile Include="Models\ViewModels\ExternalLoginViewModel.cs" />
-    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\BindingModels\ChangePasswordBindingModel.cs" />
     <Compile Include="Models\ViewModels\ManageInfoViewModel.cs" />
     <Compile Include="Models\BindingModels\RegisterBindingModel.cs" />
@@ -204,7 +203,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\Project.Data.Models\Project.Data.Models.csproj">
+      <Project>{224cf3bb-2ba6-4367-97cc-ed4231f267e1}</Project>
+      <Name>Project.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\Project.Data\Project.Data.csproj">
+      <Project>{db005941-d4ba-4bb2-8206-957f7aa25861}</Project>
+      <Name>Project.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
