@@ -2,8 +2,9 @@
 {
     using Microsoft.AspNet.Identity.EntityFramework;
     using Models;
+    using Contracts;
 
-    public class ProjectDbContext : IdentityDbContext<User>
+    public class ProjectDbContext : IdentityDbContext<User>, IProjectDbContext
     {
         public ProjectDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
