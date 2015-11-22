@@ -11,6 +11,8 @@
         {
             this.OtherDefaults = new HashSet<OtherDefaultModel>();
         }
+
+        [Key]
         public int Id { get; set; }
 
         [Required]
