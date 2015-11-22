@@ -2,7 +2,7 @@
 {
     using System.Data.Entity;
     using Project.Data;
-    using Project.Data.Migrations;
+    //using Project.Data.Migrations;
 
     public static class DatabaseConfig
     {
