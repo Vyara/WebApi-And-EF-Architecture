@@ -27,7 +27,7 @@ namespace Project.Web.Api
             httpConfig.EnsureInitialized();
 
             app
-               // .UseNinjectMiddleware(NinjectConfig.CreateKernel)
+                .UseNinjectMiddleware(NinjectConfig.CreateKernel)
                 .UseNinjectWebApi(httpConfig);
         }
     }
