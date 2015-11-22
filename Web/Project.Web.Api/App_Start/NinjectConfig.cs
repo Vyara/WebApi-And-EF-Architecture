@@ -3,6 +3,7 @@
     using System;
     using System.Data.Entity;
     using System.Web;
+    using Common.Constants;
 
     using Ninject;
     // using Ninject.Extensions.Conventions;
@@ -36,16 +37,11 @@
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind(typeof (IRepository<>)).To(typeof (EfGenericRepository<>));
-            kernel.Bind<DbContext>().To<ProjectDbContext>().InRequestScope();
+            kernel.Bind<IProjectDbContext>().To<ProjectDbContext>().InRequestScope();
 
-            //kernel.Bind(k => k
-            //    .From(
-            //        ServerConstants.InfrastructureAssembly,
-            //        ServerConstants.DataServicesAssembly,
-            //        ServerConstants.LogicServicesAssembly)
-            //    .SelectAllClasses()
-            //    .InheritedFrom<IService>()
-            //    .BindDefaultInterface());
+            //kernel.Bind(b => b.From(Assemblies.DataServices)
+            //.SelectAllClasses()
+            //.BindDefaultInterface());
         }
     }
 }
